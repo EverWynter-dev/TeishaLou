@@ -1,0 +1,1048 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+:root {
+  --bark: #B8D0C4;;
+  --mint: #B8D0C4;
+  --light-mint: #D0E2CD;
+  --deep-green:#3E6259;
+  --white: #fff;
+  --black: #000;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: inherit;
+  color: inherit;
+}
+
+h1, h2, p{
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  font-family: Nobile, Sans-Serif;
+  color: -var(--black);
+
+  overflow-x: hidden;
+}
+
+/** HEADER STYLES **/
+.nav-bar p,
+.social-media img{
+  cursor: pointer;
+  transition: all ease 0.15s;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.914);
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: rem;
+
+  z-index: 120;
+  visibility: visible;
+  opacity: 10;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.header-container{
+  height: 7rem;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h1{
+  color: var(--black);
+  font-family: Shadows Into Light, Arial;
+  font-weight: 400;
+  font-size: 3.125em;
+  white-space: nowrap;
+}
+
+.nav-bar{
+  color:var(--black);
+  height: 30px;
+  font-size: 1.5rem;
+  font-family: Life Savers, Sans-Serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  gap: 3.7rem;
+}
+
+.nav-bar p:hover{
+  transform: translateY(-20%);
+  border-bottom: 2px solid var(--black);
+}
+
+/** MAIN LANDING PAGE **/
+
+.landing-page{
+  width: 75%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+
+  overflow: visible;
+
+  margin-bottom: 2rem;
+}
+
+.left-page{
+  width: 50%;
+  padding-top: 2rem;
+
+  z-index: 1;
+  overflow: visible;
+}
+
+.right-page{
+  overflow: visible;
+
+}
+
+.bio-text h2{
+  color: var(--black);
+  font-family: Nobile;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 160%;
+
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+
+}
+
+.demo-container{
+  width: clamp(24rem, 45vw, 40rem);
+  padding: 1.2rem 1.2rem;
+  background-color: var(--mint);
+
+  border: solid 1rem var(--white);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demo-reel{
+ 
+  color: var(--black);
+  font-size: 1.4rem;
+  font-family: Life Savers, Arial;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.demo-name{
+  margin: auto;
+}
+
+.play-button,
+.demo-download{
+  cursor: pointer;
+  transition: all ease 0.15s;
+}
+
+.demo-download:hover{
+  transform: translateY(-12%);
+}
+
+.demo-download:active{
+  opacity: 0.5;
+}
+
+.green-accent{
+  background-color: var(--deep-green);
+  width: 35vw;
+  height: 37rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.7rem;
+}
+
+.demo-progress{
+  -webkit-appearance: none;
+  accent-color: var(--deep-green);
+  height: 0.25rem;
+  cursor: pointer;
+}
+
+.demo-progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 0.8rem;
+  width: 0.8rem;
+  
+  border: 2px solid var(--deep-green);
+  background-color: var(--white);
+}
+
+
+.social-media img{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.social-media img:hover{
+  transform: translateY(-18%);
+  border-bottom: 2px solid var(--white);
+}
+
+#landing-accent{
+  position: absolute;
+  
+  left: 0;
+  bottom:-5rem;
+  right: 0;
+
+  width: 115vw;
+  transform: translateX(-12.5%);
+
+  z-index: 100;
+}
+
+/** HOME STUDIO PAGE **/
+
+.studio-page, 
+.about-page{
+  width: 100vw;
+  height: 31rem;
+  background-color: var(--bark);
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.studio-container{
+  width: 75%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  scroll-snap-align: center;
+}
+
+.equipment-container,
+.connect-container{
+  background-color: var(--deep-green);
+  border: 1rem solid var(--white);
+  height: 18rem;
+  width: 31rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+
+.equipment-header p,
+.connect-header p{
+  font-family: "Shadows Into Light", Sans-Serif;
+  color: #FFF;
+  font-size: 3.125rem;
+  font-weight: 400;
+
+  margin-bottom: 0.8rem;
+}
+
+.equipment-container{
+  gap: 1rem;
+}
+
+.equipment-container p,
+.connect-container p{
+  font-family: Nobile, Sans-Serif;
+  font-size: 1.4rem;
+}
+
+.equipment-container p:nth-child(4){
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.equipment-container p span,
+.connect-container p:nth-child(1){
+  color: var(--light-mint);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Life Savers, Sans-Serif;
+}
+
+.connect-container{
+  gap: 2.4rem;
+}
+
+.connect-container p{
+  text-align: center;
+}
+
+/** RESUME GALLERY **/
+
+.resume-page{
+  width: 100vw;
+  height: 31rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-container{
+  width: 95%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-wrapper{
+  width: 79%;
+  display: flex;
+}
+
+.gallery-images{
+  display: flex;
+  overflow: scroll;
+
+  gap: 1rem;
+}
+
+.gallery-images img{
+  border: 0.7rem solid var(--bark);
+  width: 300px;
+  height: 300px;
+  transition: all ease 0.3s;
+}
+
+.direction-icon{
+  width: 5rem;
+  margin: 0 1rem;
+
+  cursor: pointer;
+  transition: all ease 0.15s;
+}
+
+.direction-icon:hover{
+  transform: scale(0.9);
+}
+
+.direction-icon:active{
+  transform: scale(0.8);
+}
+
+.dl-full-resume{
+  color: var(--black);
+  font-family: "Shadows Into Light";
+  font-size: 2.5rem;
+
+  margin-top: -4.5rem;
+
+  cursor: pointer;  
+  transition: all ease 0.15s;
+}
+
+.dl-full-resume:hover{
+  transform: translateY(-15%);
+  border-bottom: 2px solid var(--black);
+}
+
+.notation{
+  position: relative;
+
+}
+
+.notation p {
+  display: none;
+  background-color: rgba(0,0,0, 0.8);
+  position: absolute;
+  padding: 1rem 1rem;
+  text-align: center;
+
+  bottom: 1rem;
+  left: 0.8rem;
+  right: 1rem;
+}
+
+.notation:hover p{
+  display: block;
+}
+
+
+/* ABOUT SECTION */
+
+.about-container{
+  width: 70%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  
+}
+
+.profile-container{
+  margin-bottom: 5rem;
+}
+
+.about-me p{
+  font-family: "Shadows Into Light", Sans-Serif;
+  color: #FFF;
+  font-size: 3.125rem;
+  font-weight: 400;
+
+}
+
+.about-me-text p{
+  color:  var(--black);
+  font-family: Nobile;
+  font-size: 1.1rem;
+  line-height: 170%; 
+
+  margin-left: 2rem;
+  width: 55rem;
+}
+
+.image-container{
+  background-color: var(--deep-green);
+  border: 0.7rem solid var(--white);
+  height: 18rem;
+  width: 19rem;
+
+}
+
+.image-container img{
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+
+/** CONTACT PAGE **/ 
+.contact-container p{
+  color: var(--black);
+  text-align: center;
+  font-family: Nobile;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 170%;
+  padding: 2.5rem 0rem 1.5rem 0rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-container{
+  width:60rem;
+  height: 28rem;
+  border: solid 0.4rem var(--bark);
+  background-color: var(--deep-green);
+  padding:20px;
+
+}
+
+#message{
+  border:none;
+  width:50rem;
+  height: 15rem;
+  /*Resize stops users from being able to manipulate the box themselves */
+  resize: none;
+
+  border: none;
+}
+
+#lname,#fname{
+  width: 27.2rem;
+  font-family: Life Savers;
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: var(--mint);
+  padding:10px 10px;
+  border: solid 0.2rem var(--white);
+  
+}
+
+#lname{
+  margin-left: 2rem;
+}
+
+/* Targets the placeholder font inside each input */
+
+#email-address ,#message{
+  font-family: Life Savers;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--mint);
+
+  padding:10px 10px;
+  width:58rem;
+  border: solid 0.2rem var(--white);
+}
+
+/* HOVER AND ACTIVE BUTTON STATES */
+
+#send-button{
+  font-family: "Shadows Into Light", Sans-Serif;
+  color: var(--white);
+  font-size: 2.2rem;
+  height: 5rem;
+
+  background: none;
+  border:none;
+
+  cursor: pointer;
+  transition: all ease 0.1s;
+}
+
+#send-button:hover{
+  transform: translateY(-8%);
+}
+
+#send-button:active{
+  color: var(--black);
+}
+
+.social-footer{
+
+  margin: 1.4rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-footer img{
+  width: 3rem;
+  margin-left: 0.9rem;
+}
+
+footer{
+  background-color: var(--bark);
+  height: 4rem;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p{
+  color: var(--black);
+  font-family: Life Savers, Sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.hidden{
+  display: none;
+}
+
+.play-button{
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* RESPONSIVE HEADER */
+
+#result{
+  display: none;
+}
+.nav-button{
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+
+  right: 2rem;
+  z-index: 100;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all ease 0.15s;
+}
+
+.nav-button:active{
+  transform: scale(0.9);
+}
+
+.responsive-header{
+  background-color: rgba(255, 255, 255, 0.953);
+  width: 100vw;
+  height: 20rem;
+  border: 2px solid var(--deep-green);
+
+  position: fixed;
+  top: -100%;
+  width: 99vw;
+  
+  z-index: 99;
+  transition: all ease 0.2s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#responsive-nav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  color:var(--black);
+  font-family: Life Savers, Sans-Serif;
+  font-weight: 400;
+}
+
+#responsive-nav:hover{
+  transform: none;
+  border-bottom: none;
+}
+
+.responsive-header.open{
+
+  top:0%;
+  visibility: visible;
+  opacity: 1;
+
+}
+
+/** ANIMATIONS **/
+
+
+header, .landing-page,
+.studio-page{
+  animation: 1.2s fadeDown;
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+
+.animation-left {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 1.2s;
+
+}
+
+
+.animation-right {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 0.7s ease-out;
+
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animation-down {
+  opacity: 0;
+  transform: translateY(-300px);
+  transition: all 1.2s;
+}
+
+/* MEDIA QUERIES */ 
+
+:root {
+  --mobile: 600px;
+  --tablet: 768px;
+  --small-laptop: 1000px;
+}
+
+@media (max-width: 1472px){ 
+   .responsive-header,
+   .nav-button{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.4s;
+   }
+
+  .social-media{
+    width:35%;
+    height: 80%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .social-media img{
+    margin-bottom: 2rem;
+}
+  .studio-container{
+    gap:2rem;
+  }
+
+  .connect-container,
+  .equipment-container{
+    width: 35vw;
+  }
+  .about-container{
+    width: 75vw;
+  }
+  .about-me-text p{
+    width: 60vw;
+  }
+  
+  .equipment-container p,
+  .connect-container p,
+  .equipment-container p span,
+  .connect-container p:nth-child(1){
+    font-size: 1.2rem;
+  }
+
+  .nav-bar{
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (max-width: 1000px){
+  
+  .header-container h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-bar{
+    font-size:1.2rem;
+  }
+
+  .demo-reel{
+    font-size: 1.2rem;
+  }
+
+  .social-media{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+     width: 35vw;
+  }
+  .social-media img{
+    width:3.4rem;
+    margin: 0.6rem;
+  }
+  .green-accent{
+    height: 10rem;
+
+  }
+
+  .landing-page{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+  }
+
+  .left-page, 
+  .right-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #landing-accent{
+    display: none;
+  }
+
+  .header-container{
+    flex-direction: column;
+  }
+
+  /** STUDIO */
+
+  .studio-page{
+    height: 45rem;
+    align-items: center;
+  }
+
+  .about-page{
+    height: 60rem;
+  }
+
+  .studio-container, .about-container{
+    flex-direction: column;
+    gap: 0;
+    height: 55rem;
+  }
+
+
+  .profile-container{
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+
+    text-align: center;
+  }
+
+  .equipment-header p,
+  .connect-header p{
+    font-size: 2.3rem;
+  }
+
+  .equipment-container p,
+  .connect-container p,
+  .equipment-container p span,
+  .connect-container p:nth-child(1){
+    font-size: 1.2rem;
+  }
+
+  .equipment-container,
+  .connect-container{
+    height: 14rem;
+    width: 24rem;
+  }
+
+  .about-me-text p{
+    font-size: 1rem;
+    width: 35rem;
+    text-align: center;
+  }
+
+  .contact-container p{
+    font-size: 1rem;
+  }
+
+  .form-container{
+    width: 35rem;
+    height: 26rem;
+  }
+
+  #lname, #fname{
+    font-size: 0.8rem;
+    width: 14.5rem;
+  }
+
+  #email-address, #message{
+    font-size: 0.8rem;
+    width: 33rem;
+  }
+
+  #send-button{
+    font-size: 1.8rem;
+    height: 3rem;
+  }
+
+  footer p{
+    font-size: 1rem;
+  }
+ }
+
+ @media (max-width: 600px){
+  body{
+    padding-top: 2rem;
+  }
+
+  .website-title,
+  header,
+  .header-container{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .bio-text h2{
+    white-space: wrap;
+    font-size: 1rem;
+ }
+
+ .demo-container{
+  width: 20rem;
+ }
+ .demo-name{
+  font-size: 1rem;
+ }
+
+ .demo-reel img{
+  width: 1.5rem;
+ }
+
+ .play-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .green-accent{
+  width: 40vw;
+  min-width: 50vw;
+  height: 6rem;
+  margin-right: 0.7rem;
+ }
+
+ .social-media img{
+  width: 2.9rem; 
+ }
+
+ .equipment-header p,
+ .connect-header p{
+  font-size: 1.8rem;
+  text-align: center;
+ }
+
+ .equipment-container p,
+ .connect-container p,
+ .equipment-container p span,
+ .connect-container p:nth-child(1){
+   font-size: 0.9rem;
+ }
+
+ .equipment-container,
+ .connect-container{
+  width: 20rem;
+  height: 12rem;
+ }
+ 
+ .studio-page{
+  height: 40rem;
+ }
+
+ .gallery-images img{
+  width: 12rem;
+  height: 12rem;
+ }
+
+ .resume-wrapper{
+  width: 25rem;
+ }
+
+ .direction-icon{
+  width: 2rem;
+ }
+
+  .dl-full-resume{
+    font-size: 1.5rem;
+  }
+
+  .profile-container p{
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .image-container img,
+  .image-container{
+    width: 10rem;
+    height:10rem;
+  }
+
+  .about-me-text p{
+    width: 20rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .about-page{
+    height: 65rem;
+  }
+
+  .about-container{
+    height: 60rem;
+  }
+
+  .form-container{
+    width: 24rem;
+  }
+
+  #lname, #fname{
+    width: 9.25rem;
+  }
+  #message, #email-address{
+    width: 22.5rem;
+  }
+
+  .contact-container p {
+    white-space: wrap;
+    width: 20rem;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resume-page{
+    height: 25rem;
+  }
+
+  footer p{
+    text-align: center;
+  }
+
+  .responsive-header, 
+  .nav-button{
+    visibility: visible;
+    opacity: 10;
+  }
+
+  body{
+  overflow-x: hidden;
+ }
+}
+

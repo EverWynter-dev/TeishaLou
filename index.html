@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/general.css">
+  <link rel="shortcut icon" href="Images/Icon.png" type="image/x-icon">
+  <title>Teisha Lou | Experienced Voice Actor for Video Games, Animation and More </title>
+  <meta name="description" content="Teisha Lou is a British, BIPOC, LGBTQ+ voiceover artist,
+  Experienced in Video Games, Animation and more. Equipped with a Broadcast-quality home studio."/>
+  <link rel="canonical" href="https://teishalou.com"/>
+
+  <meta property="og:site_name" content="Teisha Lou" />
+  <meta property="og:title" content="Teisha Lou | Experienced Voice Actor for Video Games, Animation and More"/>
+  <meta property="og:url" content="https://teishalou.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og-description" content="Teisha Lou is a British, BIPOC, LGBTQ+ voiceover artist,
+  Experienced in Video Games, Animation, Commercial and more.
+  With complete versatility in styles, accents, voices and 
+  equipped with a Broadcast Quality Home Studio." />
+
+</head>
+
+<body>
+  <header>
+      <div class="header-container">
+        <div class="website-name">
+          <h1> TEISHA LOU </h1>
+        </div>
+        <div class="nav-bar"> 
+          <p onclick="scrollHome()"> HOME </p> 
+          <p onclick="scrollStudio()"> STUDIO </p>
+          <p onclick="scrollResume()"> RESUME </p>
+          <p onclick="scrollContact()"> CONTACT </p> 
+        </div>
+      </div>
+  </header>
+
+  <img id="hide-btn" class="nav-button" src="Images/Bars.svg" alt="Responsive Nav Opener">
+
+  <div class="responsive-header">
+    <div id="responsive-nav"> 
+      <a href="#home"> <p> HOME </p> </a>
+      <a href="#studio"> <p> STUDIO </p> </a>
+      <a href="#resume"> <p> RESUME </p> </a>
+      <a href="#contact"> <p> CONTACT </p> </a>
+    </div>
+  </div>
+  <main class="landing-page ">
+    <img id="landing-accent" src="Images/AccentLines.svg" alt="Wavy Green Accent Line">
+    <div class="left-page">
+      <div id="home" class="bio-text">
+        <h2> Teisha Lou is a British, BIPOC, LGBTQ+ voiceover artist,<br>
+          Experienced in Video Games, Animation, Commercial and more.  <br>
+          With complete versatility in styles, accents, voices and <br> equipped with a Broadcast Quality Home Studio. 
+        </h2>
+      </div>
+      <div class="demo-container">
+
+        <div class="demo-reel">
+          <div id="ctrlOne" onclick="playPauseOne()" class="play-button">
+            <img id="play" src="Images/PlayBTN.svg" alt="Play button icon">
+            <img id="pause" class="hidden" src="Images/PauseBTN.svg" alt="Pause button icon">
+          </div>
+          <div class="demo-name"> INTERACTIVE DEMO REEL</div>
+          <a href="placeholder.link" download> <div class="demo-download"> </a>
+            <img src="Images/DownloadBTN.svg" alt="Download button icon">
+          </div>
+        </div>
+        <input id="progOne" class="demo-progress" type="range" value="0">
+        <audio id="audOne" src="Files/TeishaLou_CharacterSample.mp3"> </audio>
+
+        <div class="demo-reel">
+          <div id="ctrlTwo" onclick="playPauseTwo()" class="play-button">
+            <img id="playTwo" src="Images/PlayBTN.svg" alt="Play button icon">
+            <img id="pauseTwo" class="hidden" src="Images/PauseBTN.svg" alt="Pause button icon">
+          </div>
+          <div class="demo-name"> U.K. COMMERCIAL SAMPLE  </div>
+          <div class="demo-download">
+            <a href="placeholder.link" download> <img src="Images/DownloadBTN.svg" alt="Download button icon"> </a>
+          </div>
+        </div>
+        <input id="progTwo" class="demo-progress" type="range" value="0">
+        <audio id="audTwo" src="Files/TeishaLou_CommercialSample.mp3"> </audio>
+
+        <div class="demo-reel">
+          <div id="ctrlThree" onclick="playPauseThree()" class="play-button">
+            <img id="playThree" src="Images/PlayBTN.svg" alt="Play button icon">
+            <img id="pauseThree" class="hidden" src="Images/PauseBTN.svg" alt="Pause button icon">
+          </div>
+          <div class="demo-name"> RAW STUDIO TOUR </div>
+          <div class="demo-download">
+            <a href="Files/TeishaLou_RawStudioTour.mp3" download>  <img src="Images/DownloadBTN.svg" alt="Download button icon"> </a>
+          </div>
+        </div>
+        <input id="progThree" class="demo-progress" type="range" value="0">
+        <audio id="audThree" src="Files/TeishaLou_RawStudioTour.mp3"> </audio>
+    
+      </div>
+    </div>
+
+    <div class="right-page">
+      <div class="green-accent">
+        <div class="social-media">
+          <a href="https://x.com/vocalouu" target="_blank"> <img src="Images/Twitter.svg" alt="Twitter logo"> </a>
+          <a href="https://www.linkedin.com/in/teisha-lou-373b00321/?trk=opento_sprofile_topcard" target="_blank"> <img src="Images/Linkedin.svg" alt="Linkedin logo"> </a>
+          <a href="https://www.imdb.com/name/nm16236207/?ref_=tt_cl_t_17" target="_blank"> <img src="Images/Imdb.svg" alt="Imdb Logo"> </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <article class="studio-page">
+    <div id="studio" class="studio-container">
+      <div class="equipment-cont">
+        <div class="equipment-header">
+          <p> equipment </p> 
+        </div>
+        <div class="equipment-container">
+          <p> <span> MICROPHONE: </span>  NEUMANN TLM103 </p>
+          <p> <span> INTERFACE: </span> SOLID STATE LOGIC 2</p>
+          <p> <span> DAW: </span> REAPER & AUDACITY </p>
+          <p> Broadcast Quality Home Studio <br>
+            Noise Floor average -65dB</p>
+        </div>
+      </div>
+
+      <div class="connect-cont">
+       <div class="connect-header">
+         <p> connectivity </p> </div>
+       <div class="connect-container">
+        <p> STANDARD CONNECTION VIA: </p>
+        <p> Source Nexus, Skype, <br>
+          Discord, Zoom </p>
+        <p> Please get in contact for any <br>
+          specific requests and requirements. </p>
+          
+       </div>
+      </div>
+     </div>
+
+  </article>
+
+  <article id="resume" class="resume-page">
+    <div class="resume-container">
+      <div class="resume-wrapper">
+        <img id="BackBTN" class="direction-icon" src="Images/BackBTN.svg" alt="Gallery back arrow">
+        <div class="gallery-images">
+
+        <div class="notation">
+          <img src="Resume/celestial.png" alt="Celestial | Troubles, My Dear">
+          <p> Celestial | Troubles, My Dear </p>
+        </div>
+
+        <div class="notation">
+          <img src="Resume/demidark.png"  alt="Demi | The Eyes Of Demi Darkreed">
+          <p> Demi | The Eyes Of Demi Darkreed </p>
+        </div>
+
+        <div class="notation">
+          <img src="Resume/fredrika.png"  alt="Freddy | Five Nights In Anime: SP" >
+          <p> Freddy | Five Nights In Anime: SP </p>
+        </div>
+
+        <div class="notation">
+          <img src="Resume/MoD.png"  alt="Tilianne Osric | Misfits Of Dawnwood ">
+          <p> Tilianne Osric | Misfits Of Dawnwood </p>
+        </div>
+
+        <div class="notation">
+          <img src="Resume/eden.png" alt="Additional Voices | Eden Audiodrama" >
+          <p> Additional Voices | Eden Audiodrama </p>
+        </div>
+
+        <div class="notation">
+          <img src="Resume/gills.png" alt="Gills | Yellow Target">
+          <p> Gills | Yellow Target </p>
+        </div>
+      
+        </div>
+        <img id="ForwardBTN" class="direction-icon" src="Images/ForwardBTN.svg"  alt="Gallery forward arrow">
+      </div>
+    </div>
+  </article>
+
+  <div class="download-wrapper">
+    <a href="Files/TeishaLou_VoiceOverRESUME2024.pdf" download> <div class="dl-full-resume"> download full resume </div> </a>
+  </div>
+
+  <article class="about-page">
+    <div class="about-container">
+      <div class="profile-container">
+        <div class="about-me">
+          <p> about me </p> 
+        </div>
+        <div class="image-container">
+          <img src="Images/Me.jpeg" alt="Teisha Lou Headshot">
+        </div>
+      </div>
+      <div class="about-me-text">
+        <p> Thanks for stopping by - I'm Teisha Lou and I'm a U.K based, 
+        non-binary voiceover artist with over 5 years of acting experience. 
+         As a lifelong fan of TV and Video Games, I started voice  acting in my early teens, 
+         after stumbling upon behind-the-scenes videos  of the voice actors in my favourite
+        games. <br> <br>  </p>
+
+        <p>  I thought it was the coolest job  ever, and knew I wanted it  it be MY job someday. 
+          I grabbed myself a Blue Snowball microphone and  started auditioning for a ton of cool
+           projects online.
+          Eventually, I decided to pursue an education in acting and  studied for a Diploma in 
+          Performing Arts in London. And now, equipped with a broadcast-quality home studio, I  
+          continue to work in various fields of voiceover, from Animation to Video  Games to 
+          Audiodramas and many many more! <br> <br> Directable, Versatile and endlessly passionate, I
+           am always  dedicated to providing high-quality voiceover  
+          tailored to your specific requirements.</p>
+      </div>
+     </div>
+
+  </article>
+
+  <article id="contact" class="contact-page">
+    <div class="contact-container">
+      <p> Hey! If you like what you’ve heard, please don’t hesitate to get in contact, <br>
+        Let’s make something truly awesome together! </p>
+
+      <div class="form-container">
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+
+          <!--Insert secure email encryption code below -->
+          <input  type="hidden" name="access_key" value="a8a2454f-d2eb-4c53-a606-61156566b9b4">
+    
+          <!--Stops users needing to complete a Captcha, remove line to require one-->
+          <input type="checkbox" name="botcheck" id="" style="display: none;">
+    
+          <!--First name input-->
+          <div class="fname-lname">
+            <input
+            type="text" 
+            id="fname" 
+            name="firstname" 
+            placeholder="FIRST NAME" 
+            required
+            oninvalid="this.setCustomValidity('First Name cannot be blank')"
+            oninput="this.setCustomValidity('')">
+    
+            <!--Last name input-->
+            <input
+            type="text" 
+            id="lname"
+            name="lastname" 
+            placeholder="LAST NAME" 
+            required
+            oninvalid="this.setCustomValidity('Last Name cannot be blank')"
+            oninput="this.setCustomValidity('')">
+          </div>
+            <!--Email input-->
+            <input 
+            type="text" 
+            id="email-address" 
+            name="email" 
+            placeholder="EMAIL ADDRESS"  
+            required
+            oninvalid="this.setCustomValidity('Email cannot be blank')"
+            oninput="this.setCustomValidity('')">
+    
+            <!--Message input-->
+            <textarea
+            id="message" 
+            name="message" 
+            placeholder="MESSAGE..."  
+            required
+            oninvalid="this.setCustomValidity('Message cannot be blank')"
+            oninput="this.setCustomValidity('')"></textarea>
+        
+            <!--Submit button and processing message-->
+            <input id="send-button" type="submit" value="submit">
+            <div id="result"></div>
+    
+        </form>
+      </div>
+    </div>
+    <div class="social-footer">
+      <a href="https://x.com/vocalouu" target="_blank"> <img src="Images/TwitterBlack.svg" alt="Twitter Logo in Black"> </a>
+      <a href="https://www.linkedin.com/in/teisha-lou-373b00321/?trk=opento_sprofile_topcard" target="_blank"> <img src="Images/LinkedinBlack.svg" alt="Linkedin Logo in Black"> </a>
+      <a href="https://www.imdb.com/name/nm16236207/?ref_=tt_cl_t_17" target="_blank"> <img src="Images/ImdbBlack.svg" alt="Imdb Logo in Black"> </a>
+    </div>
+  </article>
+
+  <footer> 
+    <p> ©2024 Teisha Lou. All rights reserved | Website designed and coded by Teisha Lou</p>
+  </footer>
+
+  <script src="Script/script.js"></script>
+</body>
+</html>
